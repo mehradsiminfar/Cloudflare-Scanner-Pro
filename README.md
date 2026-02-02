@@ -5,6 +5,7 @@ A fast, multi-threaded Python script to scan and find the best Cloudflare IPs (C
 Designed to bypass censorship by finding "Clean IPs" that work with VLESS/VMess configurations over Cloudflare CDN.
 
 ## ✨ Features
+
 - **Multi-threaded Scanning:** fast scanning logic.
 - **Real Upload Test:** Filters out "Zombie IPs" (IPs with good ping but 0 upload speed due to throttling).
 - **Download Speed Test:** Finds the best IPs for streaming.
@@ -23,12 +24,20 @@ Designed to bypass censorship by finding "Clean IPs" that work with VLESS/VMess 
 3. **Run the Script:**
    ```bash
    python scanner.py
-4. Enter VLESS Config
-On the first run, the script will prompt you for a VLESS URL template. This link is saved locally and used to generate new, working configurations with the found IPs.
-5. Check Results
-top_ips.txt: Contains detailed metrics for the best-performing IPs.
-ready_configs.txt: Contains your updated VLESS links, ready to be imported into your VPN client (e.g., v2rayN, Nekoray, Streisand).
-⚠️ Disclaimer
+   
+## 🛠️ Installation & Usage
+
+### 4. Enter VLESS Config
+On the first run, the script will prompt you for a **VLESS URL template**. This link is saved locally and used to generate new, working configurations with the found IPs.
+
+### 5. Check Results
+- **`top_ips.txt`**: Contains detailed metrics for the best-performing IPs.
+- **`ready_configs.txt`**: Contains your updated VLESS links, ready to be imported into your VPN client (e.g., v2rayN, Nekoray, Streisand).
+
+---
+
+## ⚠️ Disclaimer
 This tool is intended for educational purposes and network diagnostic analysis only. The developer is not responsible for any misuse of this software.
-🤝 Contributing
+
+## 🤝 Contributing
 Contributions are welcome! Feel free to fork the repository, report bugs, or submit pull requests to enhance the scanning algorithms.
